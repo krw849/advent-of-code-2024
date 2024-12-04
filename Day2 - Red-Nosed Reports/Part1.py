@@ -16,7 +16,7 @@ def is_safe(levels):
 
 
 safe_count = 0
-unsafe_count = 0
+
 with open("Day2 - Red-Nosed Reports/input", "r") as file:
     for line in file:
         levels = list(map(int, line.split()))
@@ -26,6 +26,5 @@ with open("Day2 - Red-Nosed Reports/input", "r") as file:
             safe_count += 1
         else:
             print("Unsafe")
-            unsafe_count += 1
 
 print(safe_count)
